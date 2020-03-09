@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // styles
@@ -14,11 +14,12 @@ import Header from './components/Header';
 import SidebarNav from './components/SidebarNav';
 
 const App = () => {
+  let [menuState, setMenuState] = useState(false);
   return (
     <BrowserRouter>
-      <div className="App">
-        <Header />
-        <SidebarNav />
+      <div className="App container">
+        <Header menuState={menuState} setMenuState={setMenuState} />
+        <SidebarNav menuState={menuState} setMenuState={setMenuState} />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={Aboutus} />
