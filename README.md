@@ -1,7 +1,5 @@
 # React GSAP Navigaiton Menu
 
-## Click here for the 👉 [💥LIVE DEMO]()
-
 ---
 
 `Dependencies`
