@@ -1,6 +1,6 @@
 # React GSAP Navigaiton Menu
 
----
+## ![preview](./preview.gif)
 
 `Dependencies`
 
